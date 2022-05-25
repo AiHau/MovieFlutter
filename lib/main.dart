@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
 
       title: 'Movie app',
       theme: ThemeData(
-        // primarySwatch: Colors.grey,
+        primarySwatch: Colors.amber,
+        canvasColor: Colors.black,
         scaffoldBackgroundColor: Colors.black,
+        backgroundColor: Colors.black,
       ),
       //home: InTheaterScreen(),
       initialRoute: InTheaterScreen.routeName,

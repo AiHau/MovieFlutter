@@ -1,20 +1,20 @@
 import 'package:movie/common/number_common.dart';
 
-class Movie {
+class UpcomingMovie {
   Dates? dates;
   int? page;
   List<Results>? results;
   int? totalPages;
   int? totalResults;
 
-  Movie(
+  UpcomingMovie(
       {this.dates,
       this.page,
       this.results,
       this.totalPages,
       this.totalResults});
 
-  Movie.fromJson(Map<String, dynamic> json) {
+  UpcomingMovie.fromJson(Map<String, dynamic> json) {
     dates = json['dates'] != null ? Dates.fromJson(json['dates']) : null;
     page = json['page'];
     if (json['results'] != null) {

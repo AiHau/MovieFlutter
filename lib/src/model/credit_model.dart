@@ -1,4 +1,4 @@
-class DetailMovie {
+class Credit {
   bool? adult;
   String? backdropPath;
   BelongsToCollection? belongsToCollection;
@@ -25,10 +25,8 @@ class DetailMovie {
   double? voteAverage;
   int? voteCount;
   Credits? credits;
-  
-  String? trailerId;
 
-  DetailMovie(
+  Credit(
       {this.adult,
       this.backdropPath,
       this.belongsToCollection,
@@ -56,7 +54,7 @@ class DetailMovie {
       this.voteCount,
       this.credits});
 
-  DetailMovie.fromJson(Map<String, dynamic> json) {
+  Credit.fromJson(Map<String, dynamic> json) {
     adult = json['adult'];
     backdropPath = json['backdrop_path'];
     belongsToCollection = json['belongs_to_collection'] != null
@@ -153,8 +151,6 @@ class DetailMovie {
     }
     return data;
   }
-
- 
 }
 
 class BelongsToCollection {
